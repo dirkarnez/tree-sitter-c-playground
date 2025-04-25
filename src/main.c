@@ -7,14 +7,14 @@
 
 // Declare the `tree_sitter_json` function, which is
 // implemented by the `tree-sitter-json` library.
-const TSLanguage *tree_sitter_json(void);
+// const TSLanguage *tree_sitter_json(void);
 
 int main() {
   // Create a parser.
   TSParser *parser = ts_parser_new();
 
   // Set the parser's language (JSON in this case).
-  ts_parser_set_language(parser, tree_sitter_json());
+  // ts_parser_set_language(parser, tree_sitter_json());
 
   // Build a syntax tree based on source code stored in a string.
   const char *source_code = "[1, null]";
